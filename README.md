@@ -1,3 +1,56 @@
+#User API Spesification
+
+##Create User 
+Endpoint : POST /api/users
+
+Request Body :
+
+```json
+{
+  "nama" : "fera istanti",
+  "usia" : 12
+}
+```
+
+
+Response Body (success) :
+
+```json
+{
+  "data": {
+    "id": "97a0b858-4a51-4fb4-b189-e03c9a0cfaa4",
+    "name": "fera istanti",
+    "usia": 12
+  }
+}
+```
+
+
+Response Body (failed) :
+
+```json
+{
+  "error": "User not found"
+}
+```
+
+##Delete User
+Endpoint : DELETE /api/users/id
+
+```json
+{
+  "message": "User deleted successfully"
+}
+```
+
+Response Body (failed) :
+```json
+{
+  "error": "User not found"
+}
+```
+
+
 <img width="1365" height="767" alt="Screenshot 2026-03-02 114949" src="https://github.com/user-attachments/assets/d5b475ca-a971-480c-beb7-e475701cc7c1" />
 <img width="1365" height="767" alt="Screenshot 2026-03-02 115003" src="https://github.com/user-attachments/assets/d0b1964e-32d2-4709-aeef-9c9f0b68581a" />
 <img width="1357" height="767" alt="Screenshot 2026-03-02 115027" src="https://github.com/user-attachments/assets/5a85061b-64e5-49e8-beff-4fc8c210e675" />
